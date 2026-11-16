@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1020">
+  <meta name="description" content="Mungaben — engineering graduate and software developer building websites and mobile applications.">
+  <title>Mungaben — Software Developer</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0b1020;
+      --panel: rgba(18, 27, 49, .78);
+      --text: #f3f6ff;
+      --muted: #a9b5ce;
+      --accent: #76e4c2;
+      --accent-2: #91a7ff;
+      --line: rgba(184, 201, 235, .15);
+      --max: 1080px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: radial-gradient(ellipse at 82% 4%, rgba(86, 102, 213, .19), transparent 34rem),
+                  radial-gradient(ellipse at 4% 28%, rgba(49, 193, 157, .11), transparent 30rem), var(--bg);
+      color: var(--text);
+      font: 16px/1.7 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    a { color: inherit; }
+    .wrap { width: min(var(--max), calc(100% - 40px)); margin-inline: auto; }
+    header { padding: 22px 0; }
+    nav { display:flex; align-items:center; justify-content:space-between; gap:20px; }
+    .brand { font-weight:800; letter-spacing:.04em; text-decoration:none; }
+    .brand span { color:var(--accent); }
+    .navlinks { display:flex; gap:24px; flex-wrap:wrap; }
+    .navlinks a { color:var(--muted); font-size:.92rem; text-decoration:none; }
+    .navlinks a:hover, a:hover { color:var(--accent); }
+    .hero { min-height: 74vh; display:grid; align-items:center; padding:68px 0 90px; }
+    .eyebrow { color:var(--accent); text-transform:uppercase; letter-spacing:.16em; font-weight:700; font-size:.78rem; }
+    h1 { font-size:clamp(3rem, 8vw, 6.4rem); line-height:.98; letter-spacing:-.065em; margin:18px 0; }
+    h1 span { color:var(--accent); }
+    .intro { max-width:720px; color:var(--muted); font-size:clamp(1.05rem, 2vw, 1.25rem); }
+    .actions { display:flex; gap:14px; flex-wrap:wrap; margin-top:30px; }
+    .button { padding:11px 18px; border:1px solid var(--line); border-radius:999px; text-decoration:none; font-weight:700; }
+    .button.primary { color:#071512; background:var(--accent); border-color:var(--accent); }
+    section { padding:66px 0; border-top:1px solid var(--line); }
+    h2 { font-size:clamp(1.8rem, 4vw, 2.7rem); line-height:1.15; letter-spacing:-.04em; margin:0 0 22px; }
+    .section-lead { color:var(--muted); max-width:720px; margin:0 0 28px; }
+    .grid { display:grid; grid-template-columns:repeat(3, 1fr); gap:16px; }
+    .card { padding:22px; border:1px solid var(--line); border-radius:18px; background:var(--panel); }
+    .card h3 { margin:0 0 8px; font-size:1.08rem; }
+    .card p { margin:0; color:var(--muted); }
+    .taglist { display:flex; flex-wrap:wrap; gap:10px; }
+    .tag { border:1px solid var(--line); border-radius:999px; padding:7px 12px; color:#d5def1; font-size:.92rem; }
+    .timeline { border-left:1px solid var(--line); padding-left:22px; }
+    .timeline-item { position:relative; margin:0 0 24px; }
+    .timeline-item::before { content:""; position:absolute; width:9px; height:9px; border-radius:50%; background:var(--accent); left:-27px; top:9px; }
+    .timeline-item p { color:var(--muted); margin:4px 0 0; }
+    .contact-box { display:flex; justify-content:space-between; align-items:center; gap:20px; padding:28px; border:1px solid var(--line); border-radius:20px; background:linear-gradient(125deg, rgba(118,228,194,.11), rgba(145,167,255,.1)); }
+    footer { padding:28px 0 40px; color:var(--muted); font-size:.9rem; }
+    @media (max-width:760px) {
+      .grid { grid-template-columns:1fr; }
+      .hero { min-height:auto; padding:80px 0; }
+      .navlinks { gap:12px; }
+      .contact-box { align-items:flex-start; flex-direction:column; }
+    }
+    @media (max-width:480px) {
+      .wrap { width:min(100% - 28px, var(--max)); }
+      nav { align-items:flex-start; flex-direction:column; }
+      .navlinks { font-size:.85rem; }
+    }
+  </style>
+</head>
+<body>
+  <header class="wrap">
+    <nav aria-label="Main navigation">
+      <a class="brand" href="#home">MUNGA<span>BEN</span></a>
+      <div class="navlinks">
+        <a href="#about">About</a><a href="#work">What I do</a><a href="#skills">Skills</a><a href="#journey">Education</a><a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="hero wrap" id="home" style="border:0">
+      <div>
+        <div class="eyebrow">Engineering graduate · Software developer</div>
+        <h1>Hi, I’m <span>Mungaben.</span></h1>
+        <p class="intro">I’m an engineering graduate from Multimedia University with a first-class degree, graduating in 2026. I design and build software, websites, and mobile applications that turn useful ideas into thoughtful digital experiences.</p>
+        <div class="actions">
+          <a class="button primary" href="#work">Explore what I do</a>
+          <a class="button" href="#contact">Get in touch</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="wrap">
+        <div class="eyebrow">A little about me</div>
+        <h2>Curious by nature. Builder by choice.</h2>
+        <p class="section-lead">I’m Mungaben, a software creator with an engineering foundation and a practical, problem-solving mindset. I enjoy taking a project from its first sketch through implementation, testing, and refinement—paying attention to both how it works and how it feels to use.</p>
+        <p class="section-lead">My interests span web development, mobile app development, and cybersecurity. I value clear communication, continuous learning, and building reliable products around real user needs. I’m excited to collaborate with teams and people who want to make useful, accessible technology.</p>
+      </div>
+    </section>
+
+    <section id="work">
+      <div class="wrap">
+        <div class="eyebrow">What I do</div>
+        <h2>From concept to a working product.</h2>
+        <p class="section-lead">I create end-to-end digital experiences, bringing together clean interfaces, dependable implementation, and a focus on the people who will use them.</p>
+        <div class="grid">
+          <article class="card"><h3>Websites & web applications</h3><p>Responsive websites and web experiences designed to work smoothly across devices, communicate clearly, and support their intended goals.</p></article>
+          <article class="card"><h3>Mobile applications</h3><p>Mobile app concepts and products with straightforward flows, considered interfaces, and useful functionality for everyday needs.</p></article>
+          <article class="card"><h3>Engineering-minded problem solving</h3><p>A structured approach to understanding requirements, breaking down complex problems, evaluating solutions, and improving through iteration.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="wrap">
+        <div class="eyebrow">Capabilities</div>
+        <h2>Areas I’m building in.</h2>
+        <p class="section-lead">My toolkit grows with every project. These are the areas I focus on and continue to develop.</p>
+        <div class="taglist" aria-label="Areas of interest">
+          <span class="tag">Software development</span><span class="tag">Web development</span><span class="tag">Mobile app development</span><span class="tag">Responsive design</span><span class="tag">UI/UX thinking</span><span class="tag">Problem solving</span><span class="tag">Software testing</span><span class="tag">Cybersecurity interest</span><span class="tag">Engineering fundamentals</span><span class="tag">Continuous learning</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="journey">
+      <div class="wrap">
+        <div class="eyebrow">Education & journey</div>
+        <h2>Grounded in engineering.</h2>
+        <div class="timeline">
+          <div class="timeline-item"><strong>Engineering graduate · First Class</strong><p>Multimedia University · 2026<br>Built a strong foundation in analytical thinking, technical problem-solving, and turning ideas into practical solutions.</p></div>
+          <div class="timeline-item"><strong>Software and product development</strong><p>Creating websites and mobile applications, learning through hands-on projects, and continually improving as a developer.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap">
+        <div class="contact-box">
+          <div><div class="eyebrow">Let’s connect</div><h2 style="margin:8px 0 4px">Have a project in mind?</h2><p class="section-lead" style="margin:0">I’m open to conversations, collaborations, and opportunities to build useful software.</p></div>
+          <a class="button primary" href="https://github.com/daneshapin">Find me on GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="wrap">© 2026 Mungaben · Built with care.</footer>
+</body>
+</html>
